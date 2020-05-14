@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class Utils {
     public static void loadStringsToArray(ArrayList<String> arrList) throws IOException
   {
-    Path path = Paths.get("BookTitles.txt");
+    Path path = Paths.get("BookFile.txt");
     arrList.clear();
 
     // The stream file will also be closed here
@@ -23,6 +23,7 @@ public class Utils {
     }
 
 }
+
 
 }
 

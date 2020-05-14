@@ -3,15 +3,15 @@ public class MainFile {
     public static void main(String[] args) {
         // string_b();
         BookStore newstore = new BookStore();
-        System.out.printf("Welcome to %s, located at %s. Please call %s if you have any questions.%n", newstore.bookStoreName, newstore.storeAddress, newstore.phoneNumber);
+        newstore.getTitles();
+        // System.out.printf("Welcome to %s, located at %s. Please call %s if you have any questions.%n", newstore.bookStoreName, newstore.storeAddress, newstore.phoneNumber);
+        
 
-        BookStore store = new BookStore(10, 20);
-        store.isOpen();
+        // BookStore store = new BookStore(10, 20);
+        // store.isOpen();
 
-        BookStore day = new BookStore("sunday");
-        day.dayWeAreOpen();
-       
-      
+        // BookStore day = new BookStore("sunday");
+        // day.dayWeAreOpen();
        
     }
 
