@@ -50,17 +50,23 @@ public class BookStore {
             Scanner scan = new Scanner(System.in);
             System.out.println("Enter a word maybe we have the book");
             String word = scan.nextLine();
+            System.out.println(titles.contains(word));
 
+            
             for(String title : titles){
-                if(word.contains(title)){
-                    System.out.println(title);
+                // System.out.println(title.contains(word));
+                if(title.contains(word)){
+                    System.out.println("true");
                 } else {
-                    System.out.println("We dont have that title");
+                    System.out.println("false");
                 }
+                
+                }
+                System.out.println(titles);
+                scan.close();
             }
-            scan.close();
 
-        }
+        
 
         public void dayWeAreOpen(){
             DayOfWeek sunday = DayOfWeek.of(7);
