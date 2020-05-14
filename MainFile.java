@@ -4,9 +4,9 @@ public class MainFile {
         // string_b();
         BookStore newstore = new BookStore();
         System.out.println(newstore.bookStoreName);
-        
-        BookStore store = new BookStore("Happy books", "12 anywhere", "K546");
-        System.out.print(store.bookStoreName);
+
+        BookStore store = new BookStore(4,11);
+        store.isOpen();
 
        
       

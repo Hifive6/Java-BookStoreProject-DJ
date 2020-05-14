@@ -3,8 +3,8 @@ public class BookStore {
         String bookStoreName;
         String storeAddress;
         String phoneNumber;
-        String openingTime;
-        String closingTime;
+        int openingTime;
+        int closingTime;
         int squareFeet;
         boolean usedBooks;
 
@@ -14,12 +14,18 @@ public class BookStore {
             phoneNumber = "K555";
         }
 
-        public BookStore(String name, String address, String phone) {
-            this.bookStoreName = name;
-            this.storeAddress = address;
-            this.phoneNumber = phone;
-    
+        public BookStore(int open, int close) {
+            this.openingTime = open;
+            this.closingTime = close;
+
         }
+         public void isOpen(){
+            if((openingTime >= 8) && (closingTime <= 8)){
+                System.out.println("Our bookstore is open.");
+                } else {
+                System.out.println("Sorry we are close.");
+                }
+            }
 
 
         public void openingFrontDoors(){
