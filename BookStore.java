@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.time.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class BookStore {
@@ -45,7 +46,21 @@ public class BookStore {
             System.out.println(titles.size());
         }
 
-        // public void 
+        public void getTitlesByKeyword(){
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Enter a word maybe we have the book");
+            String word = scan.nextLine();
+
+            for(String title : titles){
+                if(word.contains(title)){
+                    System.out.println(title);
+                } else {
+                    System.out.println("We dont have that title");
+                }
+            }
+            scan.close();
+
+        }
 
         public void dayWeAreOpen(){
             DayOfWeek sunday = DayOfWeek.of(7);
