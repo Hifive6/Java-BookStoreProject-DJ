@@ -1,5 +1,6 @@
 public class BookStore {
         String bookStoreName;
+
         String address;
         String phoneNumber;
         String openingTime;
@@ -18,6 +19,9 @@ public class BookStore {
         public void openedOnSunday(){
             System.out.println("No not open on Sunday");
         }
+
+    
+
 
     public BookStore() {
 
