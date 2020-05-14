@@ -1,18 +1,18 @@
-import java.util.Date;
+
 public class MainFile {
     public static void main(String[] args) {
         // string_b();
         BookStore newstore = new BookStore();
-        System.out.println(newstore.bookStoreName);
+        System.out.printf("Welcome to %s, located at %s. Please call %s if you have any questions.%n", newstore.bookStoreName, newstore.storeAddress, newstore.phoneNumber);
 
-        BookStore store = new BookStore(4,11);
+        BookStore store = new BookStore(10, 20);
         store.isOpen();
 
+        BookStore day = new BookStore("sunday");
+        day.dayWeAreOpen();
        
       
-        // System.out.printf(
-        //         "The name of the new store is %s. It is located at %s. It is a fairly large space at %d sqft.",
-        //         store.bookStoreName, store.address, store.squareFeet);
+       
     }
 
     //possible to use to check if the store is open currently at the time of ask.
