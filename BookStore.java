@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.time.*;
 import java.util.ArrayList;
 
-// import jdk.vm.ci.meta.Local;
+
 public class BookStore {
        
         String bookStoreName;
@@ -36,13 +36,17 @@ public class BookStore {
         }
 
         public void getTitles(){
-            for(int i = 0; i < 10; i++){
+            for(int i = 0; i < titles.size(); i++){
                 System.out.println(titles.get(i));
             }
         }
 
-       
-        
+        public void totalNumberOfTitles(){
+            System.out.println(titles.size());
+        }
+
+        // public void 
+
         public void dayWeAreOpen(){
             DayOfWeek sunday = DayOfWeek.of(7);
             // sunday.toString();

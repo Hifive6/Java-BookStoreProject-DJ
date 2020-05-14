@@ -4,6 +4,7 @@ public class MainFile {
         // string_b();
         BookStore newstore = new BookStore();
         newstore.getTitles();
+        newstore.totalNumberOfTitles();
         // System.out.printf("Welcome to %s, located at %s. Please call %s if you have any questions.%n", newstore.bookStoreName, newstore.storeAddress, newstore.phoneNumber);
         
 
